@@ -1,0 +1,62 @@
+.fill {
+  display: flex;
+  flex-direction: column;
+}
+.fill-cobra {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45vh;
+  background: black;
+  border-bottom: 1px solid white;
+}
+.fill-cobra .intro-circle {
+  display: inline-block;
+  background-image: url("../../imgs/logo/CobratattoLogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 21rem;
+  width: 21rem;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+  box-sizing: content-box;
+  filter: contrast(1.4);
+}
+.fill-artists {
+  width: 100%;
+  background: url("../../imgs/backgrounds/darkBackground.jpg");
+  background-size: contain;
+}
+.fill-artists__artist {
+  height: 27.5vh;
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fill-artists__artist img {
+  height: 90%;
+}
+.fill-artists__artist--text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.fill-artists__artist--text h2 {
+  font-size: 4rem;
+  margin-bottom: 5px;
+  color: #d6d6d6;
+}
+.fill-artists__artist--text p {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #b7b7b7;
+}
+.fill-artists__artist--text span {
+  font-size: 2rem;
+  color: #158aff;
+}/*# sourceMappingURL=homeFillContent.css.map */

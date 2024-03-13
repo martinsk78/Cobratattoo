@@ -1,0 +1,33 @@
+.choose-container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../imgs/backgrounds/chooseUsBackground.jpg");
+  background-attachment: fixed;
+  position: relative;
+}
+.choose-container .choose__text-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choose-container .choose__text-container .choose__text-content {
+  width: 80%;
+}
+.choose-container .choose__text-container .choose__text-content--paragraphs {
+  display: flex;
+  gap: 2rem;
+}
+.choose-container .choose__text-container .choose__text-content--paragraphs p {
+  font-size: 2rem;
+}
+.choose-container .choose__text-container .choose__text-content h2 {
+  font-size: 5rem;
+  margin-top: 0.5rem;
+}/*# sourceMappingURL=chooseUs.css.map */

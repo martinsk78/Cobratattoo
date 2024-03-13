@@ -1,0 +1,34 @@
+.choose-container {
+	height: 50vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-image: url("../../imgs/backgrounds/chooseUsBackground.jpg");
+	background-attachment: fixed;
+	position: relative;
+	& .choose__text-container {
+		background-color: rgba(0, 0, 0, 0.3);
+		width: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		& .choose__text-content {
+			width: 80%;
+			&--paragraphs {
+				display: flex;
+				gap: 2rem;
+
+				& p {
+					font-size: 2rem;
+				}
+			}
+			& h2 {
+				font-size: 5rem;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+}

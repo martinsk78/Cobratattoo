@@ -1,0 +1,57 @@
+.about {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	background-image: url("../../imgs/backgrounds/cobra_estudio1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 8vh;
+	& .blackScreen {
+		display: flex;
+		width: 100vw;
+		height: 93%;
+		background: rgba(0, 0, 0, 0.35);
+	}
+	/* .about_main container */
+	&_main {
+		display: flex;
+		justify-content: space-around;
+		/* .about_main-info */
+		&-info {
+			color: white;
+			margin-top: 12rem;
+			transition: 2s;
+
+			& h2 {
+				font-size: 4rem;
+				margin-bottom: 0;
+			}
+			& h3 {
+				font-size: 3rem;
+			}
+
+			& p {
+				font-size: 2.2rem;
+				width: 82rem;
+				line-height: 3rem;
+			}
+		}
+
+		/* .about_main-video */
+		&-video {
+			display: flex;
+			align-self: center;
+			justify-items: center;
+			height: 95%;
+			transition: 2s;
+			& video {
+				width: 58rem;
+				object-fit: cover; /* Adjust the object-fit property as needed */
+			}
+		}
+	}
+}
+
+/* Updated to use rgba for opacity */

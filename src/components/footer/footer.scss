@@ -1,0 +1,43 @@
+.footer {
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url("../../imgs/backgrounds/darkBackground.jpg");
+	color: white;
+	padding: 20px;
+	&-content {
+		display: flex;
+		align-items: center;
+		gap: 10rem;
+		&__logo {
+			width: 20rem;
+			aspect-ratio: 1;
+			border-radius: 50%;
+			background-image: url("../../imgs/logo/CobratattoLogo.png");
+			background-position: center;
+			background-size: cover;
+		}
+		&__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			align-self: flex-start;
+			h2 {
+				font-size: 4rem;
+				margin-bottom: 10px;
+			}
+			.social-icons {
+				.icon {
+					font-size: 3rem;
+					margin: 1rem 1rem 0 0;
+					transition: all 0.2s;
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+}

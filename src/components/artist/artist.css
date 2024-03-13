@@ -1,0 +1,295 @@
+@charset "UTF-8";
+span > * {
+  margin: 1.2rem;
+  color: white;
+  font-size: 4rem !important;
+  cursor: pointer;
+  transition: 0.5s !important;
+}
+
+.screenFixer {
+  z-index: 1000000;
+}
+
+points {
+  position: relative;
+  color: white;
+  font-size: 2.5rem;
+  z-index: 1001;
+  transition: all 0.5s;
+}
+points::before {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: 10;
+  opacity: 0.4;
+  transform: scale(0);
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+points:hover::before {
+  transform: scale(1);
+}
+points.Gabriel1::before {
+  background-image: url("../../imgs/backgrounds/neotradicionalBackground.gif");
+  background-size: cover;
+  background-position: center;
+}
+points.Gabriel2::before {
+  background-image: url("../../imgs/backgrounds/animeBackground.gif");
+  background-size: cover;
+  background-position: center;
+}
+points.Gabriel3::before {
+  background-image: url("../../imgs/backgrounds/tradicionalBackground.gif");
+  background-size: cover;
+  background-position: center;
+}
+points.Agostina1::before {
+  background-image: url("../../imgs/backgrounds/microrrealismoBackground.gif");
+  background-size: cover;
+  background-position: center;
+}
+points.Agostina2::before {
+  background-image: url("../../imgs/backgrounds/botanicaBackground.gif");
+  background-size: cover;
+  background-position: center;
+}
+points.Agostina3::before {
+  background-image: url("../../imgs/backgrounds/letteringBackground.gif");
+  background-size: cover;
+  background-position: center;
+}
+points:hover {
+  transform: scale(1.4);
+}
+
+/* Estilos para el contenedor principal */
+.artist {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../../imgs/backgrounds/fondoAgos.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.artist-intro {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  top: 0;
+  transition: 0.5s;
+  z-index: 2000;
+}
+.artist-intro__video {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.artist-intro__video video {
+  height: 89%;
+  margin: auto;
+}
+.artist-intro__text {
+  font-size: 1em;
+  align-self: center;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.artist-intro__text-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.artist-intro__text > * {
+  font-size: 4em;
+  margin: 0;
+  z-index: 100;
+}
+.artist-intro__text > span > * {
+  cursor: pointer;
+  z-index: 100000000000;
+}
+.artist .blackScreen {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  width: 100vw;
+  height: 98%;
+  background: rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+
+.button {
+  --black: #000000;
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #855050;
+  --white: #ffffff;
+  --af-white: #54a763;
+  position: absolute;
+  padding: 15px 44px;
+  border-radius: 2px;
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0px;
+  background-color: var(--white);
+  border: solid 1px black;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+.button .button-text {
+  position: relative;
+  font-size: 2rem;
+  z-index: 2;
+}
+.button .fill-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.button .fill-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--af-white);
+  border-radius: 50px;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: translateY(-100%);
+}
+.button:hover {
+  transform: translateY(-4px);
+  color: var(--black);
+  border-color: #54a763;
+}
+.button .button:hover .fill-container {
+  transform: translateY(-50%) rotate(0);
+}
+.button:hover .fill-container::after {
+  transform: translateY(0);
+}
+
+/* Estilos para la información del artista */
+.artist-info {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  transition: 0.3s;
+}
+.artist-info-text {
+  width: 80rem;
+  height: 50rem;
+  color: white;
+  margin: 3rem 0 0 3rem;
+  transition: 0.3s ease;
+  line-height: 3.3rem;
+}
+.artist-info-text__name {
+  font-size: 5rem;
+}
+.artist-info-text__description {
+  font-size: 2.3rem;
+  margin: 10px 0;
+}
+.artist-info__img img {
+  width: 70rem;
+  border-radius: 3px;
+}
+
+/* Estilos para la galería de tatuajes */
+.artist-tattoos {
+  position: absolute;
+  display: flex;
+  height: 87%;
+  width: 85%;
+  justify-content: center;
+  transition: 0.2s ease-in;
+  margin-right: 3.2rem;
+}
+.artist-tattoos span > * {
+  font-size: 3.2rem;
+  z-index: 100;
+}
+.artist-tattoos-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3px;
+}
+.artist-tattoos-grid__cell {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.3s;
+}
+.artist-tattoos-grid__cell:hover {
+  scale: 1.1;
+  z-index: 99;
+}
+
+.selected-tattoo {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 60rem;
+  height: 70rem;
+  gap: 1rem;
+  z-index: 100;
+}
+.selected-tattoo-container {
+  display: flex;
+  align-items: center;
+  width: 125%;
+  height: 100%;
+  flex-direction: row;
+}
+.selected-tattoo-container__mainImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: auto;
+}
+.selected-tattoo__secondaryImg {
+  display: flex;
+  gap: 1rem;
+}
+.selected-tattoo__secondaryImg img {
+  width: 20rem;
+  height: 11rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=artist.css.map */

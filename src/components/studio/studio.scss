@@ -3,12 +3,11 @@
 	display: flex;
 	align-items: center;
 	height: 100vh;
-	background-image: url("../../imgs/backgrounds/cobra_estudio1.jpg");
+
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	padding-top: 8vh;
-	transition: all 1s;
+	transition: all 0.6s;
 
 	& .blackScreen {
 		display: flex;
@@ -33,8 +32,8 @@
 			display: flex;
 			color: white;
 			transition: 2s;
-			width: 270vw;
-			height: 70vh;
+			width: 180vw;
+			height: 90vh;
 
 			&--card {
 				display: flex;
@@ -42,14 +41,36 @@
 				width: 90vw;
 				height: 100%;
 				&__content {
-					margin: 0rem 5rem;
-					& h3 {
-						font-size: 3rem;
-					}
+					margin: 0rem 15rem;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+					&--text {
+						& h3 {
+							font-size: 3rem;
+						}
 
-					& p {
-						font-size: 2.2rem;
-						line-height: 3rem;
+						& p {
+							font-size: 2.2rem;
+							line-height: 3rem;
+						}
+					}
+					&--imgs {
+						width: 100%;
+						display: flex;
+
+						& img {
+							width: 33.33%;
+							object-fit: cover;
+							&:first-child {
+								border-radius: 7px 0px 0px 7px;
+							}
+
+							&:last-child {
+								border-radius: 0px 7px 7px 0px;
+							}
+						}
 					}
 				}
 			}

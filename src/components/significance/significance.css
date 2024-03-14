@@ -3,6 +3,7 @@
   background-size: cover;
   padding-top: 9vh;
   color: white;
+  width: 100%;
 }
 .significance-intro {
   padding: 4rem 9vh 14rem 9vh;
@@ -95,13 +96,13 @@
   display: flex;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  width: 40vw;
+  width: 80%;
 }
 .significance-carousel-container__content--imgs img {
   height: 60vh;
-  width: 40vw;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }

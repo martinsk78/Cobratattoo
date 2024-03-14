@@ -6,5 +6,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 html {
+	font-size: 62.5%;
+
 	font-family: "Playfair Display", sans-serif;
+}
+/* Agregar diferentes resoluciones de ancho máximo y reducir el font-size usando media queries */
+@media only screen and (max-width: 1200px) {
+	html {
+		font-size: 50%; /* Equivale a 9.6px */
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	html {
+		font-size: 40%; /* Equivale a 9.2px */
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	html {
+		font-size: 30%; /* Equivale a 8.8px */
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	html {
+		font-size: 30%; /* Equivale a 8px */
+	}
 }

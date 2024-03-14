@@ -3,12 +3,10 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  background-image: url("../../imgs/backgrounds/cobra_estudio1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 8vh;
-  transition: all 1s;
+  transition: all 0.6s;
   /* .studio_main container */
 }
 .studio .blackScreen {
@@ -32,8 +30,8 @@
   display: flex;
   color: white;
   transition: 2s;
-  width: 270vw;
-  height: 70vh;
+  width: 180vw;
+  height: 90vh;
 }
 .studio_main-info--card {
   display: flex;
@@ -42,14 +40,33 @@
   height: 100%;
 }
 .studio_main-info--card__content {
-  margin: 0rem 5rem;
+  margin: 0rem 15rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-.studio_main-info--card__content h3 {
+.studio_main-info--card__content--text h3 {
   font-size: 3rem;
 }
-.studio_main-info--card__content p {
+.studio_main-info--card__content--text p {
   font-size: 2.2rem;
   line-height: 3rem;
+}
+.studio_main-info--card__content--imgs {
+  width: 100%;
+  display: flex;
+}
+.studio_main-info--card__content--imgs img {
+  width: 33.33%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.studio_main-info--card__content--imgs img:first-child {
+  border-radius: 7px 0px 0px 7px;
+}
+.studio_main-info--card__content--imgs img:last-child {
+  border-radius: 0px 7px 7px 0px;
 }
 
 .arrows {

@@ -1,7 +1,9 @@
 html {
-	font-size: 62.5%;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+}
+body {
+	width: 100%;
 }
 .container {
 	position: relative;

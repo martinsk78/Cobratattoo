@@ -1,11 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./studio.css";
 import video from "../../imgs/videos/360RoomTopur.mp4";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-
+import bg1 from "../../imgs/backgrounds/aboutBackground.jpg";
+import bg2 from "../../imgs/IKON/EIKON.jpg";
+import ikon1 from "../../imgs/IKON/tattooMachine.jpg";
+import ikon2 from "../../imgs/IKON/tattooMachine2.jpg";
+import ikon3 from "../../imgs/IKON/tintaIkon.jpg";
 export default function Studio() {
 	const studioRef = useRef(null);
-
+	const [background, setBackground] = useState(0);
 	const scrollLeft = () => {
 		if (studioRef.current) {
 			studioRef.current.scrollBy({
@@ -13,6 +17,7 @@ export default function Studio() {
 				behavior: "smooth",
 			});
 		}
+		setBackground(0);
 	};
 
 	const scrollRight = () => {
@@ -22,10 +27,16 @@ export default function Studio() {
 				behavior: "smooth",
 			});
 		}
+		setBackground(1);
 	};
 
 	return (
-		<div className="container studio">
+		<div
+			className="container studio"
+			style={{
+				backgroundImage: `url(${background === 0 ? bg1 : bg2})`,
+			}}
+		>
 			<div className="blackScreen">
 				<FaArrowLeft onClick={scrollLeft} className="arrows" />
 				<div className="studio_main" ref={studioRef}>
@@ -33,80 +44,47 @@ export default function Studio() {
 						<div className="studio_main-info">
 							<div className="studio_main-info--card">
 								<div className="studio_main-info--card__content">
-									<h3>Nuestro Amado Estudio</h3>
-									<p>
-										El año pasado, Cobra Tattoo Studio logró
-										dar un paso significativo en su viaje al
-										conseguir un espacio exclusivamente
-										dedicado a su estudio de tatuajes. Este
-										nuevo entorno fue diseñado pensando en
-										la comodidad de sus clientes y en
-										reflejar su estilo de vida vegano. El
-										ambiente es cálido y acogedor, con
-										detalles que hacen que te sientas como
-										en casa. Cada rincón está impregnado de
-										su amor por las plantas y la naturaleza.
-									</p>
-								</div>
-								<div className="studio_main-info--card__content">
-									<h3>Nuestro Compromiso</h3>
-									<p>
-										En Cobra Tattoo Studio, no solo
-										recibirás un tatuaje excepcional, sino
-										también una experiencia única. Cada
-										diseño se crea con atención al detalle y
-										un profundo respeto por tus deseos
-										personales. Además, nuestra ética vegana
-										se refleja en nuestros productos y
-										prácticas. Utilizamos tintas y
-										materiales respetuosos con los animales
-										y el medio ambiente, para que puedas
-										lucir tu arte con la conciencia
-										tranquila.
-									</p>
-									<p>
-										Si buscas una experiencia de tatuaje
-										única, realizada por una pareja
-										apasionada que ha convertido su estilo
-										de vida en una forma de arte, te
-										invitamos a visitarnos en [Dirección de
-										Cobra Tattoo Studio]. En Cobra Tattoo
-										Studio, tu historia se convierte en
-										tinta y arte, en un ambiente que celebra
-										la vida, la naturaleza y el respeto por
-										todas las formas de vida.
-									</p>
+									<div className="studio_main-info--card__content--text">
+										<h3>Nuestro Amado Estudio</h3>
+										<p>
+											El año pasado, Cobra Tattoo Studio
+											logró dar un paso significativo en
+											su viaje al conseguir un espacio
+											exclusivamente dedicado a su estudio
+											de tatuajes. Este nuevo entorno fue
+											diseñado pensando en la comodidad de
+											sus clientes y en reflejar su estilo
+											de vida vegano. El ambiente es
+											cálido y acogedor, con detalles que
+											hacen que te sientas como en casa.
+											Cada rincón está impregnado de su
+											amor por las plantas y la
+											naturaleza.
+										</p>
+									</div>
 								</div>
 							</div>
 							<div className="studio_main-info--card">
 								<div className="studio_main-info--card__content">
-									<h3>Nuestro Compromiso</h3>
-									<p>
-										En Cobra Tattoo Studio, no solo
-										recibirás un tatuaje excepcional, sino
-										también una experiencia única. Cada
-										diseño se crea con atención al detalle y
-										un profundo respeto por tus deseos
-										personales. Además, nuestra ética vegana
-										se refleja en nuestros productos y
-										prácticas. Utilizamos tintas y
-										materiales respetuosos con los animales
-										y el medio ambiente, para que puedas
-										lucir tu arte con la conciencia
-										tranquila.
-									</p>
-									<p>
-										Si buscas una experiencia de tatuaje
-										única, realizada por una pareja
-										apasionada que ha convertido su estilo
-										de vida en una forma de arte, te
-										invitamos a visitarnos en [Dirección de
-										Cobra Tattoo Studio]. En Cobra Tattoo
-										Studio, tu historia se convierte en
-										tinta y arte, en un ambiente que celebra
-										la vida, la naturaleza y el respeto por
-										todas las formas de vida.
-									</p>
+									<div className="studio_main-info--card__content--text">
+										<h3>Nuestra Elección de EIKON</h3>
+										<p>
+											En Cobra Tattoo Studio, hemos
+											seleccionado a EIKON como nuestro
+											proveedor de elementos para
+											tatuajes. Su compromiso con la
+											calidad y la sostenibilidad nos
+											permite ofrecer una experiencia de
+											tatuaje excepcional y ética a
+											nuestros clientes.
+										</p>
+									</div>
+
+									<div className="studio_main-info--card__content--imgs">
+										<img src={ikon1} alt="ikon product" />
+										<img src={ikon2} alt="ikon product" />
+										<img src={ikon3} alt="ikon product" />
+									</div>
 								</div>
 							</div>
 						</div>

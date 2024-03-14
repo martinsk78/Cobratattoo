@@ -35,7 +35,7 @@ function Significance() {
 		typeText("Los tatuajes", setTypedHeading);
 		setTimeout(() => {
 			typeText(
-				" Más que un poco de tinta en la piel...",
+				" Más que un poco de tinta en la piel",
 				setTypedSubHeading
 			);
 		}, 1000); // Start typing subheading after 1 second
@@ -91,7 +91,7 @@ function Significance() {
 				</h4>
 			</div>
 			<div className="significance-carousel">
-				<h3>Algunos ejemplos...</h3>
+				<h3>Te contamos un poco...</h3>
 				<div className="significance-carousel-container">
 					<div className="significance-carousel-img-container">
 						<FaArrowAltCircleLeft

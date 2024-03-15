@@ -261,12 +261,15 @@ points:hover {
 .selected-tattoo {
   position: absolute;
   display: flex;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   align-items: center;
   flex-direction: column;
   width: 60rem;
   height: 70rem;
   gap: 1rem;
-  z-index: 100;
+  z-index: 10000;
 }
 .selected-tattoo-container {
   display: flex;

@@ -13,7 +13,7 @@ function Catalogo() {
 					<h3>Agostina</h3>
 					<div className="catalogo-container_artista--tatuajes">
 						{tatuajes.map((tattoo) => {
-							return <img src={tattoo} alt="" />;
+							return (<img src={tattoo} alt="" />);
 						})}
 					</div>
 				</div>

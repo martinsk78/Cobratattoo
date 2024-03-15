@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ArrowBack, ArrowForward, ArrowUpward } from "@mui/icons-material";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
-import { GoScreenNormal } from "react-icons/go";
+// import { GoScreenNormal } from "react-icons/go";
 
 // Update with the correct path and file extension
 import "./artist.css";
@@ -103,14 +103,14 @@ export default function Artist({
 	return (
 		<div className="artist" id={artist.name}>
 			<span>
-				<GoScreenNormal
+				{/* <GoScreenNormal
 					onClick={() => {
 						document
 							.querySelector(`#${artist.name}`)
 							.scrollIntoView();
 					}}
 					className="screenFixer"
-				/>
+				/> */}
 			</span>
 			<div
 				className="artist-intro"
@@ -237,7 +237,9 @@ export default function Artist({
 							);
 						})}
 					</div>
-					<div
+					
+				</div>
+			<div
 						className="selected-tattoo"
 						style={
 							Boolean(tattooSelected)
@@ -301,7 +303,6 @@ export default function Artist({
 							}
 						})}
 					</div>
-				</div>
 			</div>
 		</div>
 	);

@@ -2,11 +2,14 @@ import React, { useRef, useState } from "react";
 import "./studio.css";
 import video from "../../imgs/videos/360RoomTopur.mp4";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import bg1 from "../../imgs/backgrounds/aboutBackground.jpg";
+import bg1 from "../../imgs/backgrounds/tattooBackground.jpg";
 import bg2 from "../../imgs/IKON/EIKON.jpg";
 import ikon1 from "../../imgs/IKON/tattooMachine.jpg";
 import ikon2 from "../../imgs/IKON/tattooMachine2.jpg";
 import ikon3 from "../../imgs/IKON/tintaIkon.jpg";
+import studio1 from "../../imgs/studio/estudio1.png";
+import studio2 from "../../imgs/studio/studio2.jpg";
+import studio3 from "../../imgs/studio/estudio3.png";
 export default function Studio() {
 	const studioRef = useRef(null);
 	const [background, setBackground] = useState(0);
@@ -61,6 +64,11 @@ export default function Studio() {
 											amor por las plantas y la
 											naturaleza.
 										</p>
+									</div>
+									<div className="studio_main-info--card__content--imgs">
+										<img src={studio1} alt="ikon product" />
+										<img src={studio2} alt="ikon product" />
+										<img src={studio3} alt="ikon product" />
 									</div>
 								</div>
 							</div>

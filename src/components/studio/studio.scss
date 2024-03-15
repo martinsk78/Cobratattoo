@@ -45,8 +45,10 @@
 					height: 100%;
 					display: flex;
 					flex-direction: column;
-					justify-content: space-around;
+
+					gap: 2rem;
 					&--text {
+						height: 30%;
 						& h3 {
 							font-size: 3rem;
 						}
@@ -57,11 +59,16 @@
 						}
 					}
 					&--imgs {
-						width: 100%;
+						height: 60vh;
+
 						display: flex;
+						display: flex;
+						gap: 1rem;
 
 						& img {
 							width: 33.33%;
+							height: 100%;
+
 							object-fit: cover;
 							&:first-child {
 								border-radius: 7px 0px 0px 7px;

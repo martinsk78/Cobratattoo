@@ -34,4 +34,24 @@
 .intro-container .intro__text-container .intro__text-content h2 {
   font-size: 5rem;
   margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .intro-container .intro__text-container .intro__text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 80%;
+  }
+  .intro-container .intro__text-container .intro__text-content--paragraphs p {
+    display: inline;
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+  }
+  .intro-container .intro__text-container .intro__text-content h2 {
+    display: inline;
+    font-size: 5rem;
+    margin-top: 0.5rem;
+  }
 }/*# sourceMappingURL=introArtists.css.map */

@@ -236,73 +236,74 @@ export default function Artist({
 								></div>
 							);
 						})}
-					</div>
-					
-				</div>
-			<div
-						className="selected-tattoo"
-						style={
-							Boolean(tattooSelected)
-								? { display: "flex" }
-								: { display: "none" }
-						}
-					>
-						<div className="selected-tattoo-container">
-							<span>
-								<ArrowBack
-									onClick={() =>
-										switchSecondaryTattoos("prev")
-									}
-								/>
-							</span>
-							<div
-								className="selected-tattoo-container__mainImg"
-								style={{ backgroundImage: tattooSelected }}
-							>
+						<div
+							className="selected-tattoo"
+							style={
+								Boolean(tattooSelected)
+									? { display: "flex" }
+									: { display: "none" }
+							}
+						>
+							<div className="selected-tattoo-container">
 								<span>
-									<HighlightOffIcon
-										onClick={() => {
-											setTattooSelected(null);
-										}}
+									<ArrowBack
+										onClick={() =>
+											switchSecondaryTattoos("prev")
+										}
+									/>
+								</span>
+								<div
+									className="selected-tattoo-container__mainImg"
+									style={{ backgroundImage: tattooSelected }}
+								>
+									<span>
+										<HighlightOffIcon
+											onClick={() => {
+												setTattooSelected(null);
+											}}
+										/>
+									</span>
+								</div>
+								<span>
+									<ArrowForward
+										onClick={() =>
+											switchSecondaryTattoos("")
+										}
 									/>
 								</span>
 							</div>
-							<span>
-								<ArrowForward
-									onClick={() => switchSecondaryTattoos("")}
-								/>
-							</span>
+							{artist.tattoos.map((tattoo) => {
+								if (`url(${tattoo[0]})` === tattooSelected) {
+									return (
+										<div className="selected-tattoo__secondaryImg">
+											<img
+												src={tattoo[0]}
+												alt=""
+												onClick={(e) =>
+													selectSecondaryTattoo(e)
+												}
+											/>
+											<img
+												src={tattoo[1]}
+												alt=""
+												onClick={(e) =>
+													selectSecondaryTattoo(e)
+												}
+											/>
+											<img
+												src={tattoo[2]}
+												alt=""
+												onClick={(e) =>
+													selectSecondaryTattoo(e)
+												}
+											/>
+										</div>
+									);
+								}
+							})}
 						</div>
-						{artist.tattoos.map((tattoo) => {
-							if (`url(${tattoo[0]})` === tattooSelected) {
-								return (
-									<div className="selected-tattoo__secondaryImg">
-										<img
-											src={tattoo[0]}
-											alt=""
-											onClick={(e) =>
-												selectSecondaryTattoo(e)
-											}
-										/>
-										<img
-											src={tattoo[1]}
-											alt=""
-											onClick={(e) =>
-												selectSecondaryTattoo(e)
-											}
-										/>
-										<img
-											src={tattoo[2]}
-											alt=""
-											onClick={(e) =>
-												selectSecondaryTattoo(e)
-											}
-										/>
-									</div>
-								);
-							}
-						})}
 					</div>
+				</div>
 			</div>
 		</div>
 	);

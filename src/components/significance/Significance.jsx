@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import agosImg from "../../imgs/backgrounds/aboutBackground.jpg";
 import "./significance.css";
 import useMousePosition from "../../utils/useMousePosition";
@@ -94,11 +94,11 @@ function Significance() {
 				<h3>Te contamos un poco...</h3>
 				<div className="significance-carousel-container">
 					<div className="significance-carousel-img-container">
-						<FaArrowAltCircleLeft
+						<FaArrowLeft
 							style={{ cursor: "pointer" }}
 							onClick={() => {
 								const carouselContent = document.querySelector(
-									".significance-carousel-container__content--imgs"
+									".significance-carousel-container__content"
 								);
 								const imgWidth = document.querySelector(
 									".significance-carousel-container__content--imgs img"
@@ -115,17 +115,18 @@ function Significance() {
 						<div className="significance-carousel-container__content">
 							<div className="significance-carousel-container__content--imgs">
 								<img src={agosImg} alt="" />
+
 								<img src={agosImg} alt="" />
 								<img src={agosImg} alt="" />
 								<img src={agosImg} alt="" />
 								<img src={agosImg} alt="" />
 							</div>
 						</div>
-						<FaArrowAltCircleRight
+						<FaArrowRight
 							style={{ cursor: "pointer" }}
 							onClick={() => {
 								const carouselContent = document.querySelector(
-									".significance-carousel-container__content--imgs"
+									".significance-carousel-container__content"
 								);
 								const imgWidth = document.querySelector(
 									".significance-carousel-container__content--imgs img"

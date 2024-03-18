@@ -52,4 +52,31 @@
      object-fit: cover; /* Adjust the object-fit property as needed */
 }
 
-/* Updated to use rgba for opacity *//*# sourceMappingURL=about.css.map */
+/* Updated to use rgba for opacity */
+@media screen and (max-width: 900px) {
+  .about {
+    /* .about_main container */
+  }
+  .about_main {
+    flex-direction: column;
+    /* .about_main-video */
+  }
+  .about_main-info {
+    margin: 10rem 3rem 3rem 3rem;
+  }
+  .about_main-info p {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    width: 100%;
+  }
+  .about_main-video video {
+    align-self: center;
+    width: auto;
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_main-video video {
+    height: 40vh;
+  }
+}/*# sourceMappingURL=about.css.map */

@@ -58,4 +58,36 @@
 }
 .nav__lista-item:nth-child(5):hover {
   box-shadow: 6px 3px 0px 2px #9d877e;
+}
+
+@media only screen and (max-width: 600px) {
+  .faBars {
+    color: white;
+    font-size: 6rem;
+    order: 1;
+    margin-right: 5rem;
+  }
+  .nav {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav__lista {
+    gap: 0;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    flex-direction: column;
+    order: 0;
+    background-color: rgb(51, 50, 50);
+    margin-right: 2rem;
+    margin-top: 4rem;
+  }
+  .nav__lista li {
+    width: 20rem;
+    padding: 3rem 2rem;
+    font-size: 3rem;
+    border: 1px solid white;
+    border-radius: 0;
+  }
 }/*# sourceMappingURL=navbar.css.map */

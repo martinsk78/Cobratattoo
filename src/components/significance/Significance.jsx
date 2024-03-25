@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import agosImg from "../../imgs/backgrounds/aboutBackground.jpg";
+import img1 from "../../imgs/backgrounds/aboutBackground.jpg";
+import img2 from "../../imgs/backgrounds/botanicaBackground.jpg";
+import img3 from "../../imgs/backgrounds/agosTatuandoIntroImg.jpg";
+import img4 from "../../imgs/backgrounds/aboutBackground2.jpeg";
+import img5 from "../../imgs/backgrounds/aboutBackground1.jpeg";
 import "./significance.css";
+import { isMobile } from "react-device-detect";
 import useMousePosition from "../../utils/useMousePosition";
 import { motion } from "framer-motion";
 
@@ -78,6 +83,15 @@ function Significance() {
 					}}
 					alt="mask1"
 					className="significance-content-bgimage"
+					onClick={(e) => {
+						if (isMobile) {
+							const element = document.querySelector(
+								".significance-content-bgimage"
+							).style;
+							element.WebkitMaskSize = "2000px";
+							element.WebkitMaskPosition = "center";
+						}
+					}}
 				>
 					<h4>
 						Y en este estudio lo sabemos a la perfeccion, valorando
@@ -114,12 +128,12 @@ function Significance() {
 
 						<div className="significance-carousel-container__content">
 							<div className="significance-carousel-container__content--imgs">
-								<img src={agosImg} alt="" />
+								<img src={img1} alt="" />
 
-								<img src={agosImg} alt="" />
-								<img src={agosImg} alt="" />
-								<img src={agosImg} alt="" />
-								<img src={agosImg} alt="" />
+								<img src={img2} alt="" />
+								<img src={img3} alt="" />
+								<img src={img4} alt="" />
+								<img src={img5} alt="" />
 							</div>
 						</div>
 						<FaArrowRight

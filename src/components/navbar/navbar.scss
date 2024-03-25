@@ -1,10 +1,9 @@
 .nav {
-	position: relative;
+	position: fixed;
 	display: flex;
 	width: 100%;
 	height: 9vh;
 	background-color: rgba(20, 19, 19, 0.566);
-	position: absolute;
 	z-index: 10;
 	left: 0;
 	right: 0;
@@ -12,6 +11,7 @@
 	align-items: center;
 	box-sizing: border-box;
 	transition: all 0.6s;
+	z-index: 2000000;
 	& img {
 		position: absolute;
 		border-radius: 50%;
@@ -76,35 +76,77 @@
 		}
 	}
 }
-@media only screen and (max-width:600px){
-	.faBars{
+@media only screen and (max-width: 600px) {
+	.faBars {
 		color: white;
 		font-size: 6rem;
 		order: 1;
 		margin-right: 5rem;
 	}
-	.nav{
+	.nav {
 		width: 100vw;
 		display: flex;
 		justify-content: flex-end;
-		&__lista{
+		&__lista {
 			gap: 0;
 			display: flex;
 			align-self: flex-start;
 			align-items: center;
 			flex-direction: column;
 			order: 0;
-			background-color:rgb(51, 50, 50);
+			background-color: rgba(23, 23, 23, 0.533);
 			margin-right: 2rem;
 			margin-top: 4rem;
-			& li{
+			&-item {
+				position: relative;
+				cursor: pointer;
+				color: rgb(255, 255, 255);
+				height: auto;
+				width: 15rem;
+				background-color: transparent;
+				font-size: 2rem;
+				font-weight: 400;
+				padding: 1.6rem;
+				text-align: center;
+				border-radius: 2px;
+				transition: all 0.25s;
+				z-index: 1;
+				&:hover {
+					color: auto;
+				}
+				&:nth-child(1):hover {
+					box-shadow: 0px 0px 0px 0px transparent;
+				}
+				&:nth-child(2):hover {
+					box-shadow: 0px 0px 0px 0px transparent;
+				}
+				&:nth-child(3):hover {
+					box-shadow: 0px 0px 0px 0px transparent;
+				}
+				&:nth-child(4):hover {
+					box-shadow: 0px 0px 0px 0px transparent;
+				}
+				&:nth-child(5):hover {
+					box-shadow: 0px 0px 0px 0px transparent;
+				}
+			}
+			& li {
 				width: 20rem;
 				padding: 3rem 2rem;
 				font-size: 3rem;
-				border: 1px solid white;
+				border-bottom: 0.2px solid white;
 				border-radius: 0;
+				&:nth-child(1) {
+					border-top: 1px solid white;
+					border-top-right-radius: 3px;
+					border-top-left-radius: 3px;
+				}
+
+				&:nth-last-child(1) {
+					border-bottom-right-radius: 3px;
+					border-bottom-left-radius: 3px;
+				}
 			}
 		}
 	}
-
 }

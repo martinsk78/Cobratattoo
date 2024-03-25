@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Intro from "../components/intro/Intro";
 import Footer from "../components/footer/Footer";
 
-function home() {
+function Home() {
+	useEffect(() => {
+		document.querySelector(".homeFirst").scrollIntoView();
+	});
 	function handleScroll(element) {
 		element.scrollIntoView({ behavior: "smooth" });
 	}
 	return (
-		<div>
+		<div className="homeFirst">
 			<Navbar handleScroll={handleScroll} />
 			<Intro handleScroll={handleScroll} />
 			<Footer />
@@ -16,4 +19,4 @@ function home() {
 	);
 }
 
-export default home;
+export default Home;

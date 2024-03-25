@@ -7,6 +7,7 @@ import videoGabi from "../imgs/videos/videoTatuando3.mp4";
 import tatuaje1 from "../imgs/tattoos/AgosTatuaje1.jpg";
 import tatuaje2 from "../imgs/tattoos/AgosTatuaje2.jpg";
 import tatuaje3 from "../imgs/tattoos/AgosTatuaje3.jpg";
+import tatuaje4 from "../imgs/studio/estudio1.png";
 import ChooseUs from "../components/chooseUs/ChooseUs";
 import IntroArtists from "../components/IntroArtists/IntroArtists";
 import Navbar from "../components/navbar/Navbar";
@@ -14,8 +15,11 @@ import Footer from "../components/footer/Footer";
 
 import { useParams } from "react-router";
 function BothArtist() {
+	useEffect(() => {
+		document.querySelector(".artistsFirst").scrollIntoView();
+	});
 	return (
-		<div>
+		<div className="artistsFirst">
 			<Navbar />
 
 			<IntroArtists />
@@ -57,7 +61,7 @@ function BothArtist() {
 				img={gabiImg}
 				video={videoGabi}
 				tattoos={[
-					[tatuaje1, tatuaje2, tatuaje3],
+					[tatuaje4, tatuaje2, tatuaje3],
 					[tatuaje2, tatuaje2, tatuaje2],
 					[tatuaje3, tatuaje3, tatuaje3],
 					[tatuaje2, tatuaje2, tatuaje2],

@@ -21,15 +21,10 @@
 .intro-container .intro__text-container .intro__text-content {
   width: 80%;
 }
-.intro-container .intro__text-container .intro__text-content--paragraphs {
-  display: flex;
-  gap: 2rem;
-}
 .intro-container .intro__text-container .intro__text-content--paragraphs p {
   font-size: 2rem;
-  width: 25vw;
   text-align: justify;
-  margin-left: 20rem;
+  width: 100%;
 }
 .intro-container .intro__text-container .intro__text-content h2 {
   font-size: 5rem;

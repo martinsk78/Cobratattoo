@@ -7,15 +7,14 @@
 }
 .significance-intro {
   padding: 4rem 9vh 14rem 9vh;
+  height: 30vh;
 }
 .significance-intro h2 {
-  font-size: 10rem;
-  height: 14vh;
+  font-size: 6rem;
   margin-bottom: 0;
 }
 .significance-intro h3 {
-  height: 6vh;
-  font-size: 3.6rem;
+  font-size: 2.7rem;
   color: rgb(186, 186, 186);
   margin-left: 2rem;
 }
@@ -70,7 +69,7 @@
 .significance-carousel h3 {
   align-self: start;
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 6rem 5rem;
 }
 .significance-carousel-img-container {
@@ -84,9 +83,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 8rem;
 }
 .significance-carousel-container > * {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 .significance-carousel-container__content {
   display: flex;
@@ -109,20 +109,21 @@
 .significance-carousel-container p {
   text-align: center;
   font-size: 2rem;
-  width: 50%;
-  margin-bottom: 0;
+  width: 70vw;
+  height: 10vh;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 900px) {
   .significance-carousel {
-    gap: 10vh;
+    gap: 5vh;
+    height: 85vh;
   }
   .significance-carousel-container__content {
     display: flex;
     width: 70vw;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: self-start;
     margin-bottom: 10rem;
     overflow-x: scroll;
   }

@@ -19,14 +19,10 @@
 		& .intro__text-content {
 			width: 80%;
 			&--paragraphs {
-				display: flex;
-				gap: 2rem;
-
 				& p {
 					font-size: 2rem;
-					width: 25vw;
 					text-align: justify;
-					margin-left: 20rem;
+					width: 100%;
 				}
 			}
 			& h2 {

@@ -23,7 +23,8 @@
   grid-template-columns: 1fr 1fr;
 }
 .catalogo-container_artista--tatuajes img {
-  width: 40rem;
+  cursor: pointer;
+  width: 20vw;
   margin: 1rem;
   aspect-ratio: 1;
   -o-object-fit: cover;
@@ -35,4 +36,122 @@
 }
 .catalogo h3 {
   font-size: 7rem;
+}
+
+.bigTattoo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.398);
+  color: white;
+}
+.bigTattoo-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.bigTattoo-content > * {
+}
+.bigTattoo-content-img {
+  position: relative;
+  width: 40vw;
+  height: 70vh;
+  margin: 0 1rem;
+}
+.bigTattoo-content-img img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+}
+.bigTattoo-content-img .closeIcon {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+  .catalogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .catalogo-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .catalogo-container_artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .catalogo-container_artista--tatuajes {
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .catalogo-container_artista--tatuajes img {
+    width: 45vw;
+    margin: 1rem;
+    aspect-ratio: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .catalogo h2 {
+    font-size: 16rem;
+    margin: 10rem 0;
+  }
+  .catalogo h3 {
+    font-size: 7rem;
+  }
+  .bigTattoo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.398);
+    color: white;
+  }
+  .bigTattoo-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+  }
+  .bigTattoo-content-img {
+    position: relative;
+    width: 80vw;
+    height: 50vh;
+    margin: 0 1rem;
+  }
+  .bigTattoo-content-img img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 3px;
+  }
+  .bigTattoo-content-img .closeIcon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=catalogo.css.map */

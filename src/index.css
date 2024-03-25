@@ -9,6 +9,17 @@ html {
 	font-size: 62.5%;
 
 	font-family: "Playfair Display", sans-serif;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+html > * {
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+* {
+	-webkit-tap-highlight-color: transparent;
 }
 /* Agregar diferentes resoluciones de ancho máximo y reducir el font-size usando media queries */
 @media only screen and (max-width: 1200px) {

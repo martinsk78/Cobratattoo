@@ -41,7 +41,12 @@ export default function Studio() {
 			}}
 		>
 			<div className="blackScreen">
-				<FaArrowLeft onClick={scrollLeft} className="arrows" />
+				<FaArrowLeft
+					onClick={() => {
+						return background === 0 ? null : scrollLeft();
+					}}
+					className="arrows"
+				/>
 				<div className="studio_main" ref={studioRef}>
 					<div className="studio_main-info">
 						<div className="studio_main-info">
@@ -98,7 +103,12 @@ export default function Studio() {
 						</div>
 					</div>
 				</div>
-				<FaArrowRight onClick={scrollRight} className="arrows" />
+				<FaArrowRight
+					onClick={() => {
+						return background === 1 ? null : scrollRight();
+					}}
+					className="arrows"
+				/>
 				<span className="intro_line"></span>
 			</div>
 		</div>

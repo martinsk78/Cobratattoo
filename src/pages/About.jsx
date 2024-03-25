@@ -1,18 +1,21 @@
-import React from "react";
-import About from "../components/about/About";
+import React, { useEffect } from "react";
+import AboutContent from "../components/about/AboutContent";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import Studio from "../components/studio/Studio";
 
-function about() {
+function About() {
+	useEffect(() => {
+		document.querySelector(".aboutFirst").scrollIntoView();
+	});
 	return (
-		<div>
+		<div className="aboutFirst">
 			<Navbar />
-			<About />
+			<AboutContent />
 			<Studio />
 			<Footer />
 		</div>
 	);
 }
 
-export default about;
+export default About;

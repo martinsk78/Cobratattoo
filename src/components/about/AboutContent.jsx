@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./about.css";
 import videoAbout from "../../imgs/videos/videoTatuando.mp4";
 
-export default function About() {
+export default function AboutContent() {
 	return (
 		<div className="container about">
 			<div className="about_main blackScreen">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ArrowBack, ArrowForward, ArrowUpward } from "@mui/icons-material";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
-// import { GoScreenNormal } from "react-icons/go";
+import { GoScreenNormal } from "react-icons/go";
 
 // Update with the correct path and file extension
 import "./artist.css";
@@ -63,11 +63,9 @@ export default function Artist({
 		}
 	};
 	const switchSecondaryTattoos = (exe) => {
-		let mainImg = document.querySelector(
-			".selected-tattoo-container__mainImg"
-		);
+		let mainImg = document.querySelector(`#selected-tattoo-${artist.name}`);
 		let mainImgBackground = document.querySelector(
-			".selected-tattoo-container__mainImg"
+			`#selected-tattoo-${artist.name}`
 		).style.backgroundImage;
 		let currentIndex = currentTattoos.indexOf(
 			mainImgBackground.substring(5, mainImgBackground.length - 2)
@@ -93,9 +91,7 @@ export default function Artist({
 		}
 	};
 	const selectSecondaryTattoo = (e) => {
-		let mainImg = document.querySelector(
-			".selected-tattoo-container__mainImg"
-		);
+		let mainImg = document.querySelector(`#selected-tattoo-${artist.name}`);
 		mainImg.style.backgroundImage = `url(${e.target.src.slice(
 			e.target.src.indexOf("/static")
 		)})`;
@@ -103,14 +99,14 @@ export default function Artist({
 	return (
 		<div className="artist" id={artist.name}>
 			<span>
-				{/* <GoScreenNormal
+				<GoScreenNormal
 					onClick={() => {
 						document
 							.querySelector(`#${artist.name}`)
 							.scrollIntoView();
 					}}
 					className="screenFixer"
-				/> */}
+				/>
 			</span>
 			<div
 				className="artist-intro"
@@ -121,7 +117,7 @@ export default function Artist({
 				}
 			>
 				<div className="artist-intro__video">
-					<video autoPlay muted loop>
+					<video autoPlay muted loop playsInline preload="auto">
 						<source src={video} type="video/mp4" />
 						Your browser does not support the video tag.
 					</video>
@@ -141,8 +137,11 @@ export default function Artist({
 									? {
 											transform: "rotate(180deg)",
 											opacity: "1",
+											marginTop: "5rem",
 										}
-									: {}
+									: {
+											marginBottom: "7rem",
+										}
 							}
 						/>
 					</span>
@@ -254,6 +253,7 @@ export default function Artist({
 								</span>
 								<div
 									className="selected-tattoo-container__mainImg"
+									id={`selected-tattoo-${artist.name}`}
 									style={{ backgroundImage: tattooSelected }}
 								>
 									<span>

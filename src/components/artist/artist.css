@@ -76,7 +76,7 @@ points:hover {
 	display: flex;
 	align-items: center;
 	height: 100vh;
-	background-image: url("../../imgs/backgrounds/fondoAgos.jpg");
+	background-image: url("../../imgs/backgrounds/fondoAgos.webp");
 	background-size: cover;
 	background-position: center;
 }

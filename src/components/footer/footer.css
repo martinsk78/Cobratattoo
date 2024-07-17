@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../../imgs/backgrounds/darkBackground.jpg");
+  background: url("../../imgs/backgrounds/darkBackground.webp");
   color: white;
   padding: 20px;
 }
@@ -17,7 +17,7 @@
   width: 20rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-image: url("../../imgs/logo/CobratattoLogo.png");
+  background-image: url("../../imgs/logo/CobratattoLogo.webp");
   background-position: center;
   background-size: cover;
 }

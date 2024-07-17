@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import img1 from "../../imgs/backgrounds/aboutBackground.jpg";
-import img2 from "../../imgs/backgrounds/botanicaBackground.jpg";
-import img3 from "../../imgs/backgrounds/agosTatuandoIntroImg.jpg";
-import img4 from "../../imgs/backgrounds/aboutBackground2.jpeg";
-import img5 from "../../imgs/backgrounds/aboutBackground1.jpeg";
+import img1 from "../../imgs/backgrounds/aboutBackground.webp";
+import img2 from "../../imgs/backgrounds/botanicaBackground.webp";
+import img3 from "../../imgs/backgrounds/agosTatuandoIntroImg.webp";
+import img4 from "../../imgs/backgrounds/aboutBackground2.webp";
+import img5 from "../../imgs/backgrounds/aboutBackground1.webp";
 import "./significance.css";
 import { isMobile } from "react-device-detect";
 import useMousePosition from "../../utils/useMousePosition";

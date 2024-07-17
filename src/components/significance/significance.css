@@ -1,5 +1,5 @@
 .significance {
-  background-image: url("../../imgs/backgrounds/darkBackground.jpg");
+  background-image: url("../../imgs/backgrounds/darkBackground.webp");
   background-size: cover;
   padding-top: 9vh;
   color: white;
@@ -35,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../imgs/backgrounds/cobra_estudio1.jpg");
+  background-image: url("../../imgs/backgrounds/cobra_estudio1.webp");
   z-index: 0;
   -webkit-mask-image: url("../../imgs/mask/tattoosMask.svg");
           mask-image: url("../../imgs/mask/tattoosMask.svg");

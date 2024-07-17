@@ -13,7 +13,7 @@ export default function Contact() {
 		<div className="contact">
 			<section className="contact-intro">
 				<img
-					src={require("../../imgs/logo/CobratattoLogo.png")}
+					src={require("../../imgs/logo/CobratattoLogo.webp")}
 					alt="logo"
 				/>
 			</section>

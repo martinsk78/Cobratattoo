@@ -13,7 +13,7 @@
 }
 .fill-cobra .intro-circle {
   display: inline-block;
-  background-image: url("../../imgs/logo/CobratattoLogo.png");
+  background-image: url("../../imgs/logo/CobratattoLogo.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 21rem;
@@ -28,7 +28,7 @@
 }
 .fill-artists {
   width: 100%;
-  background: url("../../imgs/backgrounds/darkBackground.jpg");
+  background: url("../../imgs/backgrounds/darkBackground.webp");
   background-size: contain;
 }
 .fill-artists__artist {

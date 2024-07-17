@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./catalogo.css";
-import tatuaje1 from "../../imgs/tattoos/AgosTatuaje1.jpg";
-import tatuaje2 from "../../imgs/tattoos/AgosTatuaje2.jpg";
+import tatuaje1 from "../../imgs/tattoos/AgosTatuaje1.webp";
+import tatuaje2 from "../../imgs/tattoos/AgosTatuaje2.webp";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 

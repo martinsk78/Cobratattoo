@@ -48,7 +48,7 @@ export default function Navbar({ handleScroll }) {
 			}
 		>
 			<img
-				src={require("../../imgs/logo/CobratattoLogo.png")}
+				src={require("../../imgs/logo/CobratattoLogo.webp")}
 				alt="logo"
 				onClick={() => navigate("/")}
 			/>
@@ -105,7 +105,7 @@ export default function Navbar({ handleScroll }) {
 			}
 		>
 			<img
-				src={require("../../imgs/logo/CobratattoLogo.png")}
+				src={require("../../imgs/logo/CobratattoLogo.webp")}
 				alt="logo"
 				onClick={() => navigate("/")}
 			/>

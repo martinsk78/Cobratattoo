@@ -1,7 +1,7 @@
 import React from "react";
 import "./homeFillContent.css";
-import agosPhoto from "../../imgs/backgrounds/agosTatuandoIntroImg.jpg";
-import logo from "../../imgs/logo/CobratattoLogo.png";
+import agosPhoto from "../../imgs/backgrounds/agosTatuandoIntroImg.webp";
+import logo from "../../imgs/logo/CobratattoLogo.webp";
 function HomeFillContent() {
 	return (
 		<div className="container fill">

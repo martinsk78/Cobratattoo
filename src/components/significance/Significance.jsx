@@ -33,7 +33,7 @@ function Significance() {
 				if (index === text.length) {
 					clearInterval(interval);
 				}
-			}, 70); // adjust the typing speed here (milliseconds)
+			}, 50); // adjust the typing speed here (milliseconds)
 		};
 
 		// Start typing when component mounts
